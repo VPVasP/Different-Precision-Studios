@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Different Precision Studios</title>
+    <link rel="icon" href="DifferentPrecicisonStudiosLogo.png" type="image/png">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <div class="name">
+            <h1>Different Precision Studios</h1>
+        </div>
+        <div class="nav-links">
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Virtual Relics</a></li>
+                <li><a href="#connect">Connect</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <section id="about" class="intro">
+        <div class="intro-img">
+            <img src="DifferentPrecicisonStudiosLogo.png" alt="Different Precision Studios Logo" />
+        </div>
+        <div class="intro-text">
+            <h2>Hello there! We are <span class="highlight">Different Precision Studios</span></h2>
+            <h3>We build:</h3>
+            <p id="dynamic-text"></p>
+        </div>
+    </section>
+
+    <script>
+        const phrases = ["Immersive Games", "AR Experiences", "Mobile Apps", "Creative Software", "Web Projects"];
+        let i = 0;
+        function changeText() {
+            document.getElementById("dynamic-text").textContent = phrases[i];
+            i = (i + 1) % phrases.length;
+        }
+        setInterval(changeText, 1000);
+    </script>
+
+    <section id="about-us" class="about-game">
+        <h2 class="about-title">About Us</h2>
+        <p class="about-text">
+       Indie studio based in Greece, building thoughtful software and immersive games.
+        </p>
+    </section>
+
+    <hr class="section-divider">
+
+    <section id="projects" class="about-game">
+        <h2 class="about-title">Virtual Relics</h2>
+        <p class="about-text">
+            Virtual Relics brings historical statues to life through augmented reality. Scan your environment and explore 3D models of iconic figures like Einstein, Augustus, and Queen Victoria. Rotate, scale, move, and learn with rich visual and audio info.
+        </p>
+    </section>
+
+    <section class="screenshots">
+        <div class="image-gallery">
+            <img src="https://img.itch.zone/aW1hZ2UvMzAxMTg3Mi8yMTU5NzM3OC5wbmc=/347x500/DHHlYo.png" alt="Virtual Relics Screenshot 1">
+            <img src="https://img.itch.zone/aW1hZ2UvMzAxMTg3Mi8yMTU5NzM3Ny5wbmc=/347x500/CHoyqF.png" alt="Virtual Relics Screenshot 2">
+            <img src="https://img.itch.zone/aW1hZ2UvMzAxMTg3Mi8yMTU5NzM3OS5wbmc=/347x500/jPDE2z.png" alt="Virtual Relics Screenshot 3">
+
+             <img src="https://img.itch.zone/aW1hZ2UvMzAxMTg3Mi8xODI2NTA1NS5qcGc=/347x500/gs34gW.jpg" alt="Virtual Relics Screenshot 4">
+            <img src="https://img.itch.zone/aW1hZ2UvMzAxMTg3Mi8xODI2NTA2Ni5qcGc=/347x500/pVSVl2.jpg" alt="Virtual Relics Screenshot 5">
+            <img src="https://img.itch.zone/aW1hZ2UvMzAxMTg3Mi8xODI2NTA1Ni5qcGc=/347x500/qfjgn3.jpg" alt="Virtual Relics Screenshot 6">
+        </div>
+    </section>
+
+
+
+        <div class="steam-download">
+            <span class="steam-text">Available now on Itch.io</span>
+            <div class="steam-logo">
+                <a href="https://differentprecisionstudios.itch.io/augmented-reality-ancient-statues" target="_blank">
+                    <img src="https://static-00.iconduck.com/assets.00/itch-io-icon-2048x2048-i6hzclad.png" alt="Steam Logo" />
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <hr class="section-divider">
+
+    <section id="connect" class="contact-tab">
+        <h2>Connect with Us</h2>
+        <div class="contact-tab-icons">
+            <a href="mailto:differentprecisionstudios@gmail.com" target="_blank">
+                <img src="https://www.freeiconspng.com/uploads/gmail-logo-icon-4.png" alt="Email">
+            </a>
+         
+            <a href="https://itchiovp.itch.io/" target="_blank">
+                <img src="https://static-00.iconduck.com/assets.00/itch-io-icon-256x256-0aig5hor.png" alt="itch.io">
+            </a>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Different Precision Studios | All Rights Reserved</p>
+    </footer>
+
+    <script src="JavaScript.js"></script>
+</body>
+</html>
